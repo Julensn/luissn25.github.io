@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página web accesible para todos los usuarios">
-    <title>Sitio Web</title>
+    <title>Rancho Hnos. Naranjo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,44 +12,51 @@
         <h1>Bienvenidos al Rancho Hnos. Naranjo</h1>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" data-seccion="inicio">Inicio</a></li>
+                <li><a href="#" data-seccion="acerca">Acerca</a></li>
+                <li><a href="#" data-seccion="contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="inicio">
-        <section aria-labelledby="inicio-titulo">
-            <h2 id="inicio-titulo">Contamos con:</h2>
-            <section id="galeria" class="galeria">
-             
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="seccion">
+            <h2>Contamos con:</h2>
+            <div id="galeria" class="galeria">
                 <div class="grid-imagenes">
-                    <img src="r1.jpg" alt="Descripción de la imagen 1">
-                    <img src="r2.jpg" alt="Descripción de la imagen 2">
-                    <img src="r3.jpg" alt="Descripción de la imagen 3">
-                    <img src="r4.jpg" alt="Descripción de la imagen 4">
-                    <img src="r5.jpg" alt="Descripción de la imagen 5">
-                    <img src="r6.jpg" alt="Descripción de la imagen 6">
-                    <img src="r7.jpg" alt="Descripción de la imagen 7">
-                    <img src="r8.jpg" alt="Descripción de la imagen 8">
+                    <img src="r1.jpg" alt="Descripción de la imagen 1" class="imagen-galeria">
+                    <img src="r2.jpg" alt="Descripción de la imagen 2" class="imagen-galeria">
+                    <img src="r3.jpg" alt="Descripción de la imagen 3" class="imagen-galeria">
+                    <img src="r4.jpg" alt="Descripción de la imagen 4" class="imagen-galeria">
+                    <img src="r5.jpg" alt="Descripción de la imagen 5" class="imagen-galeria">
+                    <img src="r6.jpg" alt="Descripción de la imagen 6" class="imagen-galeria">
+                    <img src="r7.jpg" alt="Descripción de la imagen 7" class="imagen-galeria">
+                    <img src="r8.jpg" alt="Descripción de la imagen 8" class="imagen-galeria">
+
                 </div>
-
-                <div id="lightbox" class="lightbox">
-                    <img id="imagen-lightbox" src="" alt="">
-                    <button id="cerrar-lightbox" class="cerrar-lightbox">×</button>
-                </div>
-
-
-            </section>
-
-
+            </div>
         </section>
-    
-      
+
+        <!-- Sección Acerca -->
+        <section id="acerca" class="seccion oculto">
+            <h2>Acerca del Rancho Hnos. Naranjo</h2>
+            <p>El Rancho Hnos. Naranjo es un complejo dedicado al disfrute de la naturaleza y el esparcimiento familiar.</p>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="seccion oculto">
+            <h2>Contacto</h2>
+            <p>Correo: <a href="mailto:soporte@accesible.com">soporte@accesible.com</a></p>
+        </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <img id="imagen-lightbox" src="" alt="">
+            <button id="cerrar-lightbox" class="cerrar-lightbox">×</button>
+        </div>
     </main>
-    
-    
+
     <script src="script.js"></script>
 </body>
 </html>

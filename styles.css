@@ -15,6 +15,58 @@ header {
     text-align: center;
 }
 
+
+
+
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo general para las secciones */
+.seccion {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.oculto {
+    display: none;
+}
+
+#inicio {
+    background-color: #f4f4f4;
+}
+
+#acerca {
+    background-color: #eef7ff;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+#contacto {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav ul {
     list-style: none;
     padding: 0;
