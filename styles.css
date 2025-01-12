@@ -50,21 +50,55 @@ html {
     text-align: center;
 }
 
+#contacto a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#contacto a i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    color: #4267B2; /* Color oficial de Facebook */
+}
+
+#contacto a:hover i {
+    color: #365899; /* Color más oscuro al pasar el mouse */
+}
 
 
+#contacto a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
 
+#contacto a i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
 
+#contacto a .fa-facebook {
+    color: #4267B2; /* Color oficial de Facebook */
+}
 
+#contacto a .fa-facebook:hover {
+    color: #365899; /* Color más oscuro al pasar el mouse */
+}
 
+#contacto a .fa-instagram {
+    color: #C13584; /* Color oficial de Instagram */
+}
 
+#contacto a .fa-instagram:hover {
+    color: #E1306C; /* Color más oscuro al pasar el mouse */
+}
 
+#contacto a .fa-whatsapp {
+    color: #25D366; /* Color oficial de WhatsApp */
+}
 
-
-
-
-
-
-
+#contacto a .fa-whatsapp:hover {
+    color: #128C7E; /* Color más oscuro al pasar el mouse */
+}
 
 
 nav ul {

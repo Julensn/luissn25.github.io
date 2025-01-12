@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const imagenes = document.querySelectorAll('.imagen-galeria');
     const lightbox = document.getElementById('lightbox');
@@ -6,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const cerrarLightbox = document.getElementById('cerrar-lightbox');
     const enlaces = document.querySelectorAll('nav a');
     const secciones = document.querySelectorAll('.seccion');
-
 
     // Abre el lightbox al hacer clic en una imagen
     imagenes.forEach(imagen => {
@@ -28,9 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Cambiar entre secciones dinámicamente
     enlaces.forEach(enlace => {
         enlace.addEventListener('click', (e) => {
-            e.preventDefault(); // Evita el comportamiento por defecto del enlace
+            e.preventDefault(); // Evita el comportamiento por defecto
             const seccionId = enlace.getAttribute('data-seccion');
 
             // Ocultar todas las secciones
@@ -43,7 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-
-
 });
