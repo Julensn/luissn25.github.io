@@ -98,3 +98,37 @@ body.alto-contraste button {
     text-decoration: underline;
     outline: 2px solid yellow;
 }
+/* Estilos para la galería */
+.galeria {
+    padding: 2rem;
+    text-align: center;
+}
+
+.galeria h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* Diseño de cuadrícula */
+.grid-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta automáticamente el número de columnas */
+    gap: 10px; /* Espaciado entre las imágenes */
+    justify-items: center; /* Centra las imágenes en su celda */
+    align-items: center;
+}
+
+.grid-imagenes img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+    max-width: 150px; /* Tamaño máximo de las imágenes */
+    height: 150px; /* Mantén un tamaño cuadrado */
+    object-fit: cover; /* Ajusta la imagen para llenar el cuadro sin deformarse */
+    border: 2px solid #ddd;
+    border-radius: 5px; /* Esquinas redondeadas opcionales */
+    transition: transform 0.3s ease; /* Animación opcional para el hover */
+}
+
+.grid-imagenes img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    border-color: #0078d7; /* Cambia el color del borde */
+}
