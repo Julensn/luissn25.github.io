@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenidos a la página</p></h1>
+    <header class="portada">
+        <h1>Bienvenidos al Sitio Accesible</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -20,14 +20,20 @@
     </header>
 
     <main id="inicio">
-        <section>
-            <h2>Contenido Principal</h2>
+        <section aria-labelledby="inicio-titulo">
+            <h2 id="inicio-titulo">Contenido Principal</h2>
             <p>Esta página está diseñada para ser accesible a todos los usuarios.</p>
             <button id="modo-contraste">Activar Modo de Alto Contraste</button>
         </section>
+    
+        <section id="acerca" aria-labelledby="acerca-titulo">
+            <h2 id="acerca-titulo">Acerca de Nosotros</h2>
+            <p>Somos un equipo dedicado a la creación de sitios web accesibles e inclusivos.</p>
+        </section>
     </main>
-
-    <footer id="contacto">
+    
+    <footer id="contacto" aria-labelledby="contacto-titulo">
+        <h2 id="contacto-titulo">Contáctanos</h2>
         <p>Contacto: <a href="mailto:soporte@accesible.com">soporte@accesible.com</a></p>
     </footer>
     <script src="script.js"></script>

@@ -53,3 +53,48 @@ body.alto-contraste button {
     background-color: yellow;
     color: black;
 }
+/* Fondo de la portada */
+.portada {
+    background-image: url('rancho.jpg'); /* Reemplaza 'portada.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Asegura que el fondo cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+    color: white; /* Texto en color blanco para contraste */
+    text-align: center; /* Centra el texto */
+    padding: 5rem 1rem; /* Espaciado interno */
+    height: 300px; /* Altura del encabezado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del título y la navegación */
+.portada h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto para mejor legibilidad */
+}
+
+.portada nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.portada nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.portada nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.portada nav ul li a:focus, .portada nav ul li a:hover {
+    text-decoration: underline;
+    outline: 2px solid yellow;
+}
