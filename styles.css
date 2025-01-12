@@ -109,26 +109,52 @@ body.alto-contraste button {
     font-size: 2rem;
 }
 
-/* Diseño de cuadrícula */
+/* Diseño en 2 columnas */
 .grid-imagenes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta automáticamente el número de columnas */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
     gap: 10px; /* Espaciado entre las imágenes */
-    justify-items: center; /* Centra las imágenes en su celda */
-    align-items: center;
 }
 
 .grid-imagenes img {
-    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
-    max-width: 150px; /* Tamaño máximo de las imágenes */
-    height: 150px; /* Mantén un tamaño cuadrado */
-    object-fit: cover; /* Ajusta la imagen para llenar el cuadro sin deformarse */
-    border: 2px solid #ddd;
-    border-radius: 5px; /* Esquinas redondeadas opcionales */
-    transition: transform 0.3s ease; /* Animación opcional para el hover */
+    width: 100%; /* Ocupa el ancho del contenedor */
+    height: auto;
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .grid-imagenes img:hover {
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
-    border-color: #0078d7; /* Cambia el color del borde */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Lightbox (visor emergente) */
+.lightbox {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+
+.cerrar-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
 }
