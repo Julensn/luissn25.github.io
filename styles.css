@@ -173,7 +173,7 @@ body.alto-contraste button {
 
 header.portada {
     width: 100%;
-    max-width: 1314px;
+    max-width: 1310px;
     height: 350px; /* Puedes ajustar esta altura según lo que necesites */
     overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
     position: relative;
