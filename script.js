@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightbox = document.getElementById('lightbox');
     const imagenLightbox = document.getElementById('imagen-lightbox');
     const cerrarLightbox = document.getElementById('cerrar-lightbox');
-    const enlaces = document.querySelectorAll('nav a');
+    const enlaces = document.querySelectorAll('nav ul li a');
     const secciones = document.querySelectorAll('.seccion');
 
     // Abre el lightbox al hacer clic en una imagen
@@ -26,6 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    enlaces.forEach(enlace => {
+        enlace.addEventListener("click", (e) => {
+            e.preventDefault(); // Evita el comportamiento predeterminado
+            const seccionId = e.target.getAttribute("data-seccion"); // Obtiene el valor de data-seccion
+            const seccion = document.getElementById(seccionId); // Busca la sección con el ID
+
+            if (seccion) {
+                seccion.scrollIntoView({ behavior: "smooth" }); // Desplazamiento suave
+            }
+        });
+    });
+
+
+
     // Cambiar entre secciones dinámicamente
     enlaces.forEach(enlace => {
         enlace.addEventListener('click', (e) => {
@@ -41,5 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 seccionMostrar.classList.remove('oculto');
             }
         });
-    });
+    }); 
 });
