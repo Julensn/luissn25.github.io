@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -7,39 +6,30 @@ body {
     margin: 0;
     padding: 0;
 }
-
 header {
     background: #0078d7;
     color: white;
     padding: 1rem;
     text-align: center;
 }
-
 footer{
     text-align: center;
 }
-
-
-/* Desplazamiento suave */
 html {
     scroll-behavior: smooth;
 }
-
-/* Estilo general para las secciones */
 .seccion {
     padding: 2rem;
     margin: 2rem 0;
     border-top: 1px solid #ddd;
 }
-
-.oculto {
-    display: none;
-}
-
 #inicio {
     background-color: #f4f4f4;
 }
 
+.oculto {
+    display: none;
+}
 #inicio p {
     font-size: 1.2rem;
     margin-bottom: 1rem;

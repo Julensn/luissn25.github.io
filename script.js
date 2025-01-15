@@ -38,8 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
-
     // Cambiar entre secciones dinámicamente
     enlaces.forEach(enlace => {
         enlace.addEventListener('click', (e) => {
