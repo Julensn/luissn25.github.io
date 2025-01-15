@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,6 +12,10 @@ header {
     background: #0078d7;
     color: white;
     padding: 1rem;
+    text-align: center;
+}
+
+footer{
     text-align: center;
 }
 
@@ -65,12 +69,12 @@ html {
 }
 
 #contacto a i {
-    margin-right: 8px; /* Espacio entre el ícono y el texto */
-    color: #4267B2; /* Color oficial de Facebook */
+    margin-right: 8px; 
+    color: #4267B2;
 }
 
 #contacto a:hover i {
-    color: #365899; /* Color más oscuro al pasar el mouse */
+    color: #365899; 
 }
 
 
@@ -81,31 +85,31 @@ html {
 }
 
 #contacto a i {
-    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    margin-right: 8px; 
 }
 
 #contacto a .fa-facebook {
-    color: #4267B2; /* Color oficial de Facebook */
+    color: #4267B2; 
 }
 
 #contacto a .fa-facebook:hover {
-    color: #365899; /* Color más oscuro al pasar el mouse */
+    color: #365899; 
 }
 
 #contacto a .fa-instagram {
-    color: #C13584; /* Color oficial de Instagram */
+    color: #C13584; 
 }
 
 #contacto a .fa-instagram:hover {
-    color: #E1306C; /* Color más oscuro al pasar el mouse */
+    color: #E1306C;
 }
 
 #contacto a .fa-whatsapp {
-    color: #25D366; /* Color oficial de WhatsApp */
+    color: #25D366; 
 }
 
 #contacto a .fa-whatsapp:hover {
-    color: #128C7E; /* Color más oscuro al pasar el mouse */
+    color: #128C7E; 
 }
 
 
@@ -149,8 +153,8 @@ body.alto-contraste button {
 }
 /* Fondo de la portada */
 .portada {
-    background-image: url('rancho.jpg'); /* Reemplaza 'portada.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Asegura que el fondo cubra todo el área */
+    background-image: url('rancho.jpg'); 
+    background-size: cover; 
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repeticiones */
     color: white; /* Texto en color blanco para contraste */
@@ -166,16 +170,16 @@ body.alto-contraste button {
 }
 
 .portada img {
-    width: 100%; /* Se ajusta al ancho completo del contenedor */
-    height: auto; /* Mantiene las proporciones originales */
-    object-fit: cover; /* Recorta la imagen si es necesario para llenar el contenedor */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
 header.portada {
     width: 100%;
     max-width: 1310px;
-    height: 350px; /* Puedes ajustar esta altura según lo que necesites */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
+    height: 350px; 
+    overflow: hidden; 
     position: relative;
 }
 
@@ -190,7 +194,7 @@ header.portada img {
 .portada h1 {
     font-size: 2.5rem;
     margin: 0 0 1rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto para mejor legibilidad */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .portada nav ul {
